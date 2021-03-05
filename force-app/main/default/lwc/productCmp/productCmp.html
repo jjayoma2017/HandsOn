@@ -6,7 +6,7 @@
         <div class="slds-m-around_medium">
          <lightning-input-field field-name='Name' onchange={handleNameChange}></lightning-input-field>
          <lightning-input-field field-name='Product_Type_c__c' onchange={handleTypeSelect}></lightning-input-field>
-         <template if:true={areDetailsVisible}>
+         <template if:true={vidSelected}>
             <lightning-input-field field-name='Preview_Timestamp_c__c' onchange={handleTimeStamp}></lightning-input-field>
          </template>
          

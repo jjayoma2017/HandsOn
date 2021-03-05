@@ -19,17 +19,17 @@ export default class ProductCmp extends LightningElement {
 
     handleNameChange(event) {
         console.log("You selected: " + event.detail.value);
-        prodName = event.detail.value;
+        this.prodName = event.detail.value;
     }
     handleTimeStamp(event) {
         console.log("You selected: " + event.detail.value);
-        type = event.detail.value;
+        this.type = event.detail.value;
     }
     handleTypeSelect(event) {
         console.log("You selected: " + event.detail.value);
         
-        if(event.detail.value=='Video'){
-            vidSelected = true;
+        if(event.detail.value==='Video'){
+            this.vidSelected = true;
         }
     }
 }
